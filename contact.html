@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Qualifi Revenue Solutions</title>
+  <meta name="description" content="Get in touch with Qualifi Revenue Solutions. Schedule your free marketing audit and discover how we can help you generate qualified leads.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            mono: ['Space Mono', 'monospace']
+          },
+          colors: {
+            'qualifi-bg': '#0C0C0C',
+            'qualifi-blue': '#34dada',
+            'qualifi-green': '#4ecb71',
+            'qualifi-orange': '#fa5e45',
+            'qualifi-yellow': '#ffd232',
+            'qualifi-border': '#222222',
+            'qualifi-text': '#999999',
+            'qualifi-dot': '#333333'
+          }
+        }
+      }
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-qualifi-bg text-white font-mono">
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-[1000] mx-[2%] bg-qualifi-bg" id="top">
+    <div class="flex items-center justify-between py-[15px]">
+      <a href="index.html" class="flex items-center justify-center pl-2.5 md:pl-0">
+        <div class="text-xl md:text-2xl font-inter font-semibold">Qualifi</div>
+      </a>
+
+      <nav class="hidden md:block">
+        <a href="index.html" class="inline-block px-8 py-5 text-xs font-inter font-medium tracking-[0.15em] text-qualifi-text hover:text-white transition-colors">HOME</a>
+        <a href="index.html#services" class="inline-block px-8 py-5 text-xs font-inter font-medium tracking-[0.15em] text-qualifi-text hover:text-white transition-colors">SERVICES</a>
+        <a href="about.html" class="inline-block px-8 py-5 text-xs font-inter font-medium tracking-[0.15em] text-qualifi-text hover:text-white transition-colors">ABOUT</a>
+        <a href="contact.html" class="inline-block px-8 py-5 text-xs font-inter font-medium tracking-[0.15em]">CONTACT</a>
+      </nav>
+
+      <button class="md:hidden p-[18px]" aria-label="menu" onclick="toggleMobileMenu()">
+        <div class="w-[35px] h-[3px] bg-white my-[5px]"></div>
+        <div class="w-[35px] h-[3px] bg-white my-[5px]"></div>
+      </button>
+    </div>
+    <div class="h-[1px] bg-qualifi-border"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="flex items-stretch justify-between overflow-hidden py-[2%]">
+    <div class="grow mx-[2%] my-[2%]">
+      <div class="max-w-4xl mx-auto text-center">
+        <div class="inline-block border border-qualifi-border px-4 py-2 text-xs font-inter font-semibold tracking-[0.2em] text-qualifi-green mb-6">
+          GET IN TOUCH
+        </div>
+
+        <h1 class="text-[48px] md:text-[72px] font-inter font-semibold leading-[52px] md:leading-[80px] mb-6">
+          Let's Talk About Your Growth
+        </h1>
+
+        <p class="text-base md:text-lg text-qualifi-text leading-relaxed max-w-2xl mx-auto font-mono">
+          Schedule a free consultation and see how we can help you generate qualified leads that convert. No obligation, no pressure—just expert advice.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form & Info Section -->
+  <div class="flex items-stretch justify-between overflow-hidden py-[2%]">
+    <div class="grow mx-[2%] border-t border-qualifi-border pt-16">
+      <div class="grid md:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div>
+          <h2 class="text-[32px] md:text-[48px] font-inter font-semibold mb-8">
+            Send Us a Message
+          </h2>
+
+          <div id="contact-form-container">
+            <form id="contact-form" class="space-y-6">
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-2">FIRST NAME *</label>
+                  <input
+                    type="text"
+                    name="firstName"
+                    required
+                    class="w-full bg-transparent border border-qualifi-border focus:border-qualifi-blue px-4 py-4 text-white placeholder-qualifi-text outline-none transition-colors font-mono"
+                  />
+                </div>
+                <div>
+                  <label class="block text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-2">LAST NAME *</label>
+                  <input
+                    type="text"
+                    name="lastName"
+                    required
+                    class="w-full bg-transparent border border-qualifi-border focus:border-qualifi-blue px-4 py-4 text-white placeholder-qualifi-text outline-none transition-colors font-mono"
+                  />
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-2">WORK EMAIL *</label>
+                <input
+                  type="email"
+                  name="email"
+                  required
+                  class="w-full bg-transparent border border-qualifi-border focus:border-qualifi-blue px-4 py-4 text-white placeholder-qualifi-text outline-none transition-colors font-mono"
+                />
+              </div>
+
+              <div>
+                <label class="block text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-2">PHONE NUMBER *</label>
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  class="w-full bg-transparent border border-qualifi-border focus:border-qualifi-blue px-4 py-4 text-white placeholder-qualifi-text outline-none transition-colors font-mono"
+                />
+              </div>
+
+              <div>
+                <label class="block text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-2">COMPANY NAME</label>
+                <input
+                  type="text"
+                  name="company"
+                  class="w-full bg-transparent border border-qualifi-border focus:border-qualifi-blue px-4 py-4 text-white placeholder-qualifi-text outline-none transition-colors font-mono"
+                />
+              </div>
+
+              <div>
+                <label class="block text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-2">MONTHLY MARKETING BUDGET</label>
+                <select
+                  name="budget"
+                  class="w-full bg-qualifi-bg border border-qualifi-border focus:border-qualifi-blue px-4 py-4 text-white outline-none transition-colors font-mono"
+                >
+                  <option value="" class="bg-qualifi-bg">Select budget range</option>
+                  <option value="<5k" class="bg-qualifi-bg">Less than $5,000</option>
+                  <option value="5k-10k" class="bg-qualifi-bg">$5,000 - $10,000</option>
+                  <option value="10k-25k" class="bg-qualifi-bg">$10,000 - $25,000</option>
+                  <option value="25k-50k" class="bg-qualifi-bg">$25,000 - $50,000</option>
+                  <option value="50k+" class="bg-qualifi-bg">$50,000+</option>
+                </select>
+              </div>
+
+              <div>
+                <label class="block text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-2">WHAT ARE YOU INTERESTED IN? *</label>
+                <div class="space-y-3">
+                  <label class="flex items-center border border-qualifi-border hover:border-qualifi-blue px-4 py-3 cursor-pointer transition-colors bg-qualifi-bg">
+                    <input type="checkbox" name="services[]" value="lead-generation" class="mr-3 accent-qualifi-blue">
+                    <span class="font-mono text-sm">Lead Generation</span>
+                  </label>
+                  <label class="flex items-center border border-qualifi-border hover:border-qualifi-blue px-4 py-3 cursor-pointer transition-colors bg-qualifi-bg">
+                    <input type="checkbox" name="services[]" value="ppc" class="mr-3 accent-qualifi-blue">
+                    <span class="font-mono text-sm">PPC Advertising</span>
+                  </label>
+                  <label class="flex items-center border border-qualifi-border hover:border-qualifi-blue px-4 py-3 cursor-pointer transition-colors bg-qualifi-bg">
+                    <input type="checkbox" name="services[]" value="seo" class="mr-3 accent-qualifi-blue">
+                    <span class="font-mono text-sm">SEO & Content</span>
+                  </label>
+                  <label class="flex items-center border border-qualifi-border hover:border-qualifi-blue px-4 py-3 cursor-pointer transition-colors bg-qualifi-bg">
+                    <input type="checkbox" name="services[]" value="social" class="mr-3 accent-qualifi-blue">
+                    <span class="font-mono text-sm">Social Media Ads</span>
+                  </label>
+                  <label class="flex items-center border border-qualifi-border hover:border-qualifi-blue px-4 py-3 cursor-pointer transition-colors bg-qualifi-bg">
+                    <input type="checkbox" name="services[]" value="email" class="mr-3 accent-qualifi-blue">
+                    <span class="font-mono text-sm">Email Marketing</span>
+                  </label>
+                  <label class="flex items-center border border-qualifi-border hover:border-qualifi-blue px-4 py-3 cursor-pointer transition-colors bg-qualifi-bg">
+                    <input type="checkbox" name="services[]" value="cro" class="mr-3 accent-qualifi-blue">
+                    <span class="font-mono text-sm">Conversion Optimization</span>
+                  </label>
+                </div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-2">TELL US ABOUT YOUR PROJECT</label>
+                <textarea
+                  name="message"
+                  rows="5"
+                  class="w-full bg-transparent border border-qualifi-border focus:border-qualifi-blue px-4 py-4 text-white placeholder-qualifi-text outline-none transition-colors resize-none font-mono"
+                  placeholder="What are your main goals? What challenges are you facing?"
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                class="w-full bg-qualifi-orange text-white font-inter font-semibold py-4 px-6 hover:opacity-90 transition-opacity text-sm tracking-wide"
+              >
+                SEND MESSAGE →
+              </button>
+
+              <p class="text-xs text-qualifi-text text-center font-mono">
+                By submitting, you agree to our privacy policy. We'll respond within 24 hours.
+              </p>
+            </form>
+          </div>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="space-y-8">
+          <div>
+            <h2 class="text-[32px] md:text-[48px] font-inter font-semibold mb-8">
+              Contact Information
+            </h2>
+
+            <div class="space-y-6">
+              <div class="border border-qualifi-border p-6 bg-qualifi-bg">
+                <div class="flex items-start gap-4">
+                  <div class="w-3 h-3 bg-qualifi-blue flex-shrink-0 mt-1"></div>
+                  <div>
+                    <div class="text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-1">EMAIL</div>
+                    <a href="mailto:hello@qualifi.com" class="text-base font-mono hover:text-qualifi-blue transition-colors">
+                      hello@qualifi.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border border-qualifi-border p-6 bg-qualifi-bg">
+                <div class="flex items-start gap-4">
+                  <div class="w-3 h-3 bg-qualifi-blue flex-shrink-0 mt-1"></div>
+                  <div>
+                    <div class="text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-1">PHONE</div>
+                    <a href="tel:+1-555-0123-4567" class="text-base font-mono hover:text-qualifi-blue transition-colors">
+                      +1 (555) 012-3467
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border border-qualifi-border p-6 bg-qualifi-bg">
+                <div class="flex items-start gap-4">
+                  <div class="w-3 h-3 bg-qualifi-blue flex-shrink-0 mt-1"></div>
+                  <div>
+                    <div class="text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-1">BUSINESS HOURS</div>
+                    <div class="text-base font-mono">Monday - Friday</div>
+                    <div class="text-sm text-qualifi-text font-mono">9:00 AM - 6:00 PM EST</div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="border border-qualifi-border p-6 bg-qualifi-bg">
+                <div class="flex items-start gap-4">
+                  <div class="w-3 h-3 bg-qualifi-blue flex-shrink-0 mt-1"></div>
+                  <div>
+                    <div class="text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-1">OFFICE</div>
+                    <div class="text-base font-mono">123 Marketing Street</div>
+                    <div class="text-sm text-qualifi-text font-mono">Suite 400</div>
+                    <div class="text-sm text-qualifi-text font-mono">New York, NY 10001</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="border border-qualifi-border p-6 bg-qualifi-bg">
+            <div class="text-xs font-inter font-semibold tracking-[0.1em] text-qualifi-text mb-4">FOLLOW US</div>
+            <div class="flex gap-4">
+              <a href="https://twitter.com/NoCodeMachine" class="border border-qualifi-border hover:border-qualifi-blue hover:bg-qualifi-blue/10 p-4 transition-all">
+                <svg class="w-6 h-6 text-qualifi-blue" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/company/nocodemachine/" class="border border-qualifi-border hover:border-qualifi-blue hover:bg-qualifi-blue/10 p-4 transition-all">
+                <svg class="w-6 h-6 text-qualifi-blue" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/>
+                  <circle cx="4" cy="4" r="2"/>
+                </svg>
+              </a>
+              <a href="https://facebook.com" class="border border-qualifi-border hover:border-qualifi-blue hover:bg-qualifi-blue/10 p-4 transition-all">
+                <svg class="w-6 h-6 text-qualifi-blue" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick Response Section -->
+  <div class="flex items-stretch justify-between overflow-hidden py-[2%]">
+    <div class="grow mx-[2%] border-t border-qualifi-border pt-16">
+      <div class="text-center mb-12">
+        <div class="text-xs font-inter font-semibold tracking-[0.2em] text-qualifi-green mb-4">OUR PROCESS</div>
+        <h2 class="text-[32px] md:text-[48px] font-inter font-semibold mb-6">
+          What Happens Next?
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div class="border border-qualifi-border p-8 text-center bg-qualifi-bg">
+          <div class="text-4xl font-inter font-semibold text-qualifi-blue mb-4">01</div>
+          <h3 class="text-lg font-inter font-semibold mb-3">We Review Your Info</h3>
+          <p class="text-qualifi-text text-sm leading-relaxed font-mono">
+            Our team reviews your submission and prepares a preliminary analysis of your current marketing efforts.
+          </p>
+        </div>
+
+        <div class="border border-qualifi-border p-8 text-center bg-qualifi-bg">
+          <div class="text-4xl font-inter font-semibold text-qualifi-green mb-4">02</div>
+          <h3 class="text-lg font-inter font-semibold mb-3">Schedule a Call</h3>
+          <p class="text-qualifi-text text-sm leading-relaxed font-mono">
+            Within 24 hours, we'll reach out to schedule a convenient time for your free marketing audit.
+          </p>
+        </div>
+
+        <div class="border border-qualifi-border p-8 text-center bg-qualifi-bg">
+          <div class="text-4xl font-inter font-semibold text-qualifi-blue mb-4">03</div>
+          <h3 class="text-lg font-inter font-semibold mb-3">Get Your Strategy</h3>
+          <p class="text-qualifi-text text-sm leading-relaxed font-mono">
+            We'll present a customized growth strategy with projected results and next steps—no obligation to proceed.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Alternative Contact Methods -->
+  <div class="flex items-stretch justify-between overflow-hidden py-[2%]">
+    <div class="grow mx-[2%] border-t border-qualifi-border pt-16">
+      <div class="max-w-4xl mx-auto">
+        <div class="border border-qualifi-border p-10 text-center bg-qualifi-bg">
+          <h3 class="text-2xl font-inter font-semibold mb-4">Prefer to Talk Now?</h3>
+          <p class="text-qualifi-text mb-6 font-mono">
+            Our team is available during business hours for immediate assistance
+          </p>
+          <div class="flex flex-col md:flex-row gap-4 justify-center">
+            <a
+              href="tel:+1-555-0123-4567"
+              class="inline-block bg-qualifi-orange text-white font-inter font-semibold py-4 px-8 hover:opacity-90 transition-opacity text-sm tracking-wide"
+            >
+              CALL US NOW
+            </a>
+            <a
+              href="mailto:hello@qualifi.com?subject=Urgent Inquiry"
+              class="inline-block border border-qualifi-border text-white font-inter font-semibold py-4 px-8 hover:bg-qualifi-blue/10 transition-colors text-sm tracking-wide"
+            >
+              EMAIL US DIRECTLY
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="flex items-stretch justify-between overflow-hidden py-[2%]">
+    <div class="flex flex-col md:flex-row justify-between grow mx-[2%] border-t border-qualifi-border pt-8">
+      <a href="index.html" class="block md:flex items-center pl-2.5 md:pl-0 py-3 md:py-0">
+        <div class="text-sm md:text-base font-mono text-qualifi-text">Qualifi Revenue Solutions ©️ 2024</div>
+      </a>
+
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="flex flex-col md:flex-row">
+          <a href="index.html" class="block md:flex px-2.5 md:px-8 py-5 md:py-0 text-xs font-inter font-medium tracking-[0.15em] text-qualifi-text hover:text-white transition-colors">
+            HOME
+          </a>
+          <a href="about.html" class="block md:flex px-2.5 md:px-8 py-5 md:py-0 text-xs font-inter font-medium tracking-[0.15em] text-qualifi-text hover:text-white transition-colors">
+            ABOUT
+          </a>
+          <a href="contact.html" class="block md:flex px-2.5 md:px-8 py-5 md:py-0 text-xs font-inter font-medium tracking-[0.15em] text-qualifi-text hover:text-white transition-colors">
+            CONTACT
+          </a>
+          <a href="https://twitter.com/NoCodeMachine" class="block md:flex px-2.5 md:px-8 py-5 md:py-0 text-xs font-inter font-medium tracking-[0.15em] text-qualifi-text hover:text-white transition-colors">
+            TWITTER
+          </a>
+          <a href="https://www.linkedin.com/company/nocodemachine/" class="block md:flex px-2.5 md:px-8 py-5 md:py-0 text-xs font-inter font-medium tracking-[0.15em] text-qualifi-text hover:text-white transition-colors">
+            LINKEDIN
+          </a>
+          <a href="mailto:hello@qualifi.com" class="block md:flex px-2.5 md:px-8 py-5 md:py-0 text-xs font-mono text-qualifi-text hover:text-white transition-colors">
+            hello@qualifi.com
+          </a>
+        </div>
+
+        <a href="#top" class="flex items-center pr-0 md:pr-2.5 py-[15px] md:py-0 hover:opacity-70 transition-opacity">
+          <svg class="w-5 h-5 mr-2 text-qualifi-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+          </svg>
+          <div class="text-sm md:text-base font-inter font-medium tracking-wide text-qualifi-text">BACK TO TOP</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Contact form submission handler
+    document.getElementById('contact-form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      const data = Object.fromEntries(formData);
+
+      console.log('Contact form submitted:', data);
+
+      // Show success message
+      document.getElementById('contact-form-container').innerHTML = `
+        <div class="border border-qualifi-border p-10 text-center bg-qualifi-bg">
+          <div class="w-16 h-16 mx-auto mb-6 border-4 border-qualifi-green rounded-full flex items-center justify-center">
+            <div class="text-4xl text-qualifi-blue">✓</div>
+          </div>
+          <h3 class="text-3xl font-inter font-semibold mb-4">Message Sent!</h3>
+          <p class="text-white text-base mb-6 font-mono">
+            Thank you for reaching out. We'll review your message and get back to you within 24 hours.
+          </p>
+          <p class="text-qualifi-text text-sm font-mono">
+            Check your email for a confirmation message with next steps.
+          </p>
+        </div>
+      `;
+    });
+
+    // Mobile menu toggle
+    function toggleMobileMenu() {
+      console.log('Mobile menu toggled');
+    }
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

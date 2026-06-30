@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>QUALIFI | Precision Growth</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;600;700&amp;family=Inter:wght@400;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "inverse-on-surface": "#303030",
+                "error-container": "#93000a",
+                "on-error-container": "#ffdad6",
+                "on-secondary": "#2f3131",
+                "surface-dim": "#131313",
+                "on-surface-variant": "#cfc4c5",
+                "inverse-primary": "#5e5e5e",
+                "on-background": "#e2e2e2",
+                "tertiary-container": "#000000",
+                "surface-container-lowest": "#0e0e0e",
+                "primary-fixed": "#e2e2e2",
+                "on-tertiary": "#303030",
+                "background": "#131313",
+                "primary-container": "#000000",
+                "surface-container-highest": "#353535",
+                "secondary": "#c6c6c7",
+                "on-secondary-container": "#b4b5b5",
+                "on-tertiary-fixed": "#1b1b1b",
+                "surface-variant": "#353535",
+                "surface": "#131313",
+                "secondary-fixed": "#e2e2e2",
+                "surface-container-high": "#2a2a2a",
+                "on-primary-container": "#757575",
+                "on-primary": "#303030",
+                "primary": "#c6c6c6",
+                "tertiary-fixed-dim": "#c6c6c6",
+                "outline": "#988e90",
+                "on-tertiary-container": "#757575",
+                "secondary-fixed-dim": "#c6c6c7",
+                "surface-bright": "#393939",
+                "surface-container": "#1f1f1f",
+                "secondary-container": "#454747",
+                "on-tertiary-fixed-variant": "#474747",
+                "inverse-surface": "#e2e2e2",
+                "on-surface": "#e2e2e2",
+                "tertiary": "#c6c6c6",
+                "outline-variant": "#4c4546",
+                "error": "#ffb4ab",
+                "on-primary-fixed-variant": "#474747",
+                "on-primary-fixed": "#1b1b1b",
+                "surface-tint": "#c6c6c6",
+                "tertiary-fixed": "#e2e2e2",
+                "surface-container-low": "#1b1b1b",
+                "on-error": "#690005",
+                "on-secondary-fixed": "#1a1c1c",
+                "on-secondary-fixed-variant": "#454747",
+                "primary-fixed-dim": "#c6c6c6",
+                "accent-green": "#CCFF00",
+                "accent-blue": "#00A3FF",
+                "accent-pink": "#FF007F"
+            },
+            "borderRadius": {
+                "DEFAULT": "0px",
+                "lg": "0px",
+                "xl": "0px",
+                "full": "9999px"
+            },
+            "spacing": {
+                "section-gap": "160px",
+                "gutter": "32px",
+                "margin-tablet": "40px",
+                "margin-mobile": "24px",
+                "container-max": "1440px",
+                "margin-desktop": "80px",
+                "unit": "8px"
+            },
+            "fontFamily": {
+                "display-lg": ["Archivo Narrow"],
+                "headline-xl": ["Archivo Narrow"],
+                "headline-lg": ["Archivo Narrow"],
+                "headline-md": ["Archivo Narrow"],
+                "label-xl": ["Archivo Narrow"],
+                "body-lg": ["Inter"],
+                "body-md": ["Inter"],
+                "body-sm": ["Inter"]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .ghost-offset {
+            position: relative;
+        }
+        .ghost-offset::before {
+            content: '';
+            position: absolute;
+            top: 8px;
+            left: 8px;
+            right: -8px;
+            bottom: -8px;
+            border: 1px solid #FFFFFF;
+            z-index: -1;
+        }
+        body {
+            background-color: #000000;
+            color: #e2e2e2;
+        }
+        .mask-gradient {
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+        /* Style from SCREEN_4 */
+        .how-we-work-card:hover {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+        .how-we-work-card:hover .opacity-20 {
+            opacity: 1;
+        }
+        .how-we-work-card:hover .opacity-60 {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-background">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-background border-b border-outline-variant flex justify-between items-center h-20 px-margin-mobile md:px-margin-desktop">
+<div class="font-headline-lg text-headline-lg font-bold tracking-tighter text-on-background">QUALIFI</div>
+<div class="hidden md:flex gap-gutter items-center">
+<a class="font-label-xl text-label-xl text-on-background border-b border-on-background pb-1 hover:text-on-background transition-colors duration-200" href="#">Home</a>
+<a class="font-label-xl text-label-xl text-on-surface-variant hover:text-on-background transition-colors duration-200" href="#">Services</a>
+<a class="font-label-xl text-label-xl text-on-surface-variant hover:text-on-background transition-colors duration-200" href="#">Partners</a>
+<a class="font-label-xl text-label-xl text-on-surface-variant hover:text-on-background transition-colors duration-200" href="#">Contact</a>
+</div>
+<button class="scale-100 active:scale-95 transition-transform bg-on-background text-background px-6 py-3 font-label-xl text-label-xl font-bold tracking-wider">
+            PARTNER WITH US
+        </button>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col justify-center pt-20 px-margin-mobile md:px-margin-desktop relative overflow-hidden">
+<div class="absolute inset-0 z-0 opacity-40">
+
+<div class="absolute inset-0 bg-gradient-to-t from-background via-transparent to-background"></div>
+</div>
+<div class="relative z-10 max-w-[900px]">
+<div class="w-16 h-1 bg-accent-blue mb-8"></div>
+<h1 class="font-display-lg text-[64px] md:text-display-lg leading-tight mb-8">
+                    PRECISION GROWTH.<br/>STRATEGIC PARTNERSHIPS.
+                </h1>
+<div class="flex flex-col md:flex-row gap-6 mt-12">
+<button class="bg-on-background text-background px-10 py-5 font-label-xl text-label-xl font-bold tracking-widest transition-all hover:bg-accent-blue active:scale-95">
+                        PARTNER WITH US
+                    </button>
+<button class="border border-on-background text-on-background px-10 py-5 font-label-xl text-label-xl font-bold tracking-widest transition-all hover:bg-surface-variant active:scale-95">
+                        VIEW APPROACH
+                    </button>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-margin-desktop hidden md:flex items-center gap-4">
+<span class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest">Scroll to explore</span>
+<div class="w-px h-12 bg-outline-variant"></div>
+</div>
+</section>
+<!-- Revenue-First Philosophy (Added from SCREEN_6) -->
+<section class="px-margin-mobile md:px-margin-desktop py-section-gap bg-background overflow-hidden border-b border-outline-variant">
+<div class="max-w-container-max mx-auto">
+<div class="flex flex-col md:flex-row gap-16">
+<div class="md:w-1/3">
+<h2 class="font-headline-xl text-headline-xl uppercase sticky top-32">REVENUE-FIRST <br/>PHILOSOPHY</h2>
+</div>
+<div class="md:w-2/3 space-y-24">
+<div class="border-l border-on-background pl-8">
+<p class="font-display-lg text-[48px] leading-[1.1] mb-8 font-bold italic">"Revenue is the only metric that matters."</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                                At Qualifi, we reject vanity metrics. Impressions, likes, and engagement are secondary to the bottom line. Our philosophy is rooted in the aggressive pursuit of strategic growth, powered by data-backed precision. We identify the levers that drive capital and pull them with unwavering focus.
+                            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Methodology Section: Bento Grid Framework -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop">
+<div class="mb-20">
+<p class="font-label-md text-label-md text-accent-blue mb-4 uppercase tracking-[0.3em]">Our Framework</p>
+<h2 class="font-headline-xl text-headline-xl">THE THREE-PHASE ARCHITECTURE</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Discovery -->
+<div class="md:col-span-4 border border-outline-variant p-10 flex flex-col justify-between aspect-square hover:bg-surface-container transition-colors group">
+<div>
+<span class="font-display-lg text-4xl text-outline-variant group-hover:text-accent-blue transition-colors">01</span>
+<h3 class="font-headline-lg text-headline-lg mt-8 mb-4">DISCOVERY</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Deep-intelligence mining of market inefficiencies and untapped revenue vectors within your ecosystem.</p>
+</div>
+<div class="w-12 h-12 border border-outline-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">radar</span>
+</div>
+</div>
+<!-- Strategy -->
+<div class="md:col-span-4 border border-outline-variant p-10 flex flex-col justify-between aspect-square bg-surface-container-low hover:bg-surface-container transition-colors group">
+<div>
+<span class="font-display-lg text-4xl text-outline-variant group-hover:text-accent-pink transition-colors">02</span>
+<h3 class="font-headline-lg text-headline-lg mt-8 mb-4">STRATEGY</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Engineering bespoke, high-velocity growth models tailored to dominant market penetration and long-term scaling.</p>
+</div>
+<div class="w-12 h-12 border border-outline-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">architecture</span>
+</div>
+</div>
+<!-- Execution -->
+<div class="md:col-span-4 border border-outline-variant p-10 flex flex-col justify-between aspect-square hover:bg-surface-container transition-colors group">
+<div>
+<span class="font-display-lg text-4xl text-outline-variant group-hover:text-accent-green transition-colors">03</span>
+<h3 class="font-headline-lg text-headline-lg mt-8 mb-4">EXECUTION</h3>
+<p class="font-body-lg text-body-lg text-on-surface-variant">Precision implementation across all digital touchpoints with a relentless focus on data-driven optimization.</p>
+</div>
+<div class="w-12 h-12 border border-outline-variant flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface">rocket_launch</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Results Section: High-Contrast Technical Imagery & Stats -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
+<div class="lg:col-span-5">
+<p class="font-label-md text-label-md text-accent-pink mb-4 uppercase tracking-[0.3em]">Validation</p>
+<h2 class="font-headline-xl text-headline-xl mb-12 leading-tight">STRATEGIC RESULTS BY THE NUMBERS</h2>
+<div class="space-y-12">
+<div class="flex items-end gap-6 border-b border-outline-variant pb-8">
+<span class="font-display-lg text-6xl md:text-8xl text-accent-green leading-none">240%</span>
+<span class="font-label-xl text-label-xl text-on-surface-variant mb-2 uppercase">Growth YoY</span>
+</div>
+<div class="flex items-end gap-6 border-b border-outline-variant pb-8">
+<span class="font-display-lg text-6xl md:text-8xl text-on-surface leading-none">42ms</span>
+<span class="font-label-xl text-label-xl text-on-surface-variant mb-2 uppercase">Velocity Gain</span>
+</div>
+<div class="flex items-end gap-6 border-b border-outline-variant pb-8">
+<span class="font-display-lg text-6xl md:text-8xl text-accent-blue leading-none">12x</span>
+<span class="font-label-xl text-label-xl text-on-surface-variant mb-2 uppercase">ROAS Benchmark</span>
+</div>
+</div>
+</div>
+<div class="lg:col-span-7 relative">
+<div class="ghost-offset w-full h-[600px] overflow-hidden">
+<img class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="Technical visualization of a dashboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-dPH_id28D9Whs6mUSAf3xAcmeD4fcBmRQmsvYFzOIwZZ_m2SFJSBsw1roT_Z-ShmbvHcmfnl9K6oguQR0l42zEf3OysUPb4AbntoKUrX-dtK-PpBtE2Im2qsiJyM6cLt-jvioemnhfw1zpqFm-ddCqJ78ng2NCArBAgrXAEfRoKdmyxvbypxh1hVCLCJNYCgAwtQIZJbtALM0Q-jAdUnH8DXPdpbEyq9B81c5eNaGmKRN8_Lwt5yyv1iMGL4UCEGCXfs1BxDDs_0"/>
+</div>
+</div>
+</div>
+</section>
+<!-- How We Work (Added from SCREEN_4) -->
+<section class="bg-[#0A0A0A] border-y border-outline-variant px-margin-mobile md:px-margin-desktop py-section-gap">
+<div class="mb-20 text-center">
+<h2 class="font-headline-xl text-headline-xl uppercase mb-4">How We Work</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mx-auto">Our four-stage process is built for speed and precision, ensuring strategic alignment at every milestone.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-0 border border-white">
+<div class="how-we-work-card p-8 border-r border-white border-b md:border-b-0 transition-colors duration-300 group">
+<span class="font-display-lg text-display-lg-mobile opacity-20 block mb-6 transition-opacity">01</span>
+<h4 class="font-label-xl text-label-xl mb-4 uppercase">Discovery</h4>
+<p class="font-body-sm text-body-sm opacity-60 transition-opacity">Deep-dive analysis of current revenue streams and untapped market potential.</p>
+</div>
+<div class="how-we-work-card p-8 border-r border-white border-b md:border-b-0 transition-colors duration-300 group">
+<span class="font-display-lg text-display-lg-mobile opacity-20 block mb-6 transition-opacity">02</span>
+<h4 class="font-label-xl text-label-xl mb-4 uppercase">Strategy</h4>
+<p class="font-body-sm text-body-sm opacity-60 transition-opacity">Customized growth blueprints mapping partnerships and conversion funnels.</p>
+</div>
+<div class="how-we-work-card p-8 border-r border-white border-b md:border-b-0 transition-colors duration-300 group">
+<span class="font-display-lg text-display-lg-mobile opacity-20 block mb-6 transition-opacity">03</span>
+<h4 class="font-label-xl text-label-xl mb-4 uppercase">Execution</h4>
+<p class="font-body-sm text-body-sm opacity-60 transition-opacity">Active deployment of technical assets and partner outreach programs.</p>
+</div>
+<div class="how-we-work-card p-8 transition-colors duration-300 group">
+<span class="font-display-lg text-display-lg-mobile opacity-20 block mb-6 transition-opacity">04</span>
+<h4 class="font-label-xl text-label-xl mb-4 uppercase">Scale</h4>
+<p class="font-body-sm text-body-sm opacity-60 transition-opacity">Iterative optimization and scaling of successful revenue channels.</p>
+</div>
+</div>
+</section>
+<!-- Final CTA: Architectural & Precise -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop text-center bg-background">
+<div class="max-w-4xl mx-auto">
+<span class="material-symbols-outlined text-6xl text-accent-blue mb-8">engineering</span>
+<h2 class="font-display-lg text-[48px] md:text-[80px] leading-tight mb-12">
+                    READY TO ENGINEER YOUR DOMINANCE?
+                </h2>
+<div class="flex justify-center mt-16">
+<button class="bg-on-background text-background px-16 py-6 font-label-xl text-label-xl font-extrabold tracking-[0.2em] transition-all hover:bg-accent-blue hover:text-white active:scale-95 flex items-center gap-4">
+                        INITIATE PARTNERSHIP
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="mt-12 flex justify-center gap-12 text-on-surface-variant font-label-md text-label-md uppercase tracking-widest">
+<span class="flex items-center gap-2"><span class="w-2 h-2 bg-accent-green rounded-full"></span> SYSTEM ONLINE</span>
+<span class="flex items-center gap-2"><span class="w-2 h-2 bg-accent-green rounded-full"></span> CAPACITY: 2 SLOTS OPEN</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full border-t border-outline-variant bg-background flex flex-col md:flex-row justify-between items-start py-section-gap px-margin-mobile md:px-margin-desktop gap-gutter">
+<div class="flex flex-col gap-8 max-w-sm">
+<div class="font-headline-md text-headline-md font-bold text-on-background">QUALIFI</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Strategic growth precision for partners who demand market dominance and algorithmic excellence.</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-12">© 2024 QUALIFI REVENUE SERVICES. STRATEGIC GROWTH PRECISION.</p>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-3 gap-20">
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md text-on-background uppercase tracking-widest mb-2">Navigation</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-background transition-colors duration-200" href="#">Services</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-background transition-colors duration-200" href="#">Partners</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-background transition-colors duration-200" href="#">Contact</a>
+</div>
+<div class="flex flex-col gap-4">
+<span class="font-label-md text-label-md text-on-background uppercase tracking-widest mb-2">Legal</span>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-background transition-colors duration-200" href="#">Privacy Policy</a>
+<a class="font-body-sm text-body-sm text-on-surface-variant hover:text-on-background transition-colors duration-200" href="#">Terms of Service</a>
+</div>
+<div class="flex flex-col gap-4 col-span-2 md:col-span-1">
+<span class="font-label-md text-label-md text-on-background uppercase tracking-widest mb-2">Connect</span>
+<div class="flex gap-4">
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-on-background hover:text-background transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">public</span>
+</a>
+<a class="w-10 h-10 border border-outline-variant flex items-center justify-center hover:bg-on-background hover:text-background transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">share</span>
+</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('opacity-100');
+                        entry.target.classList.remove('opacity-0', 'translate-y-10');
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            document.querySelectorAll('section').forEach(section => {
+                section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+                observer.observe(section);
+            });
+        });
+    </script>
+</body></html>
