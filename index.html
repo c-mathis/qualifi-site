@@ -55,8 +55,11 @@
   </header>
 
   <!-- Hero Section with Lead Form -->
-  <div class="flex items-start justify-between overflow-hidden min-h-[60svh] pt-[8%] pb-[2%]">
-    <div class="flex flex-col md:flex-row items-start justify-between mx-[2%] grow gap-12 md:gap-16">
+  <div class="relative flex items-start justify-between overflow-hidden min-h-[60svh] pt-[8%] pb-[2%]">
+    <!-- Particle Background -->
+    <div class="absolute inset-0 pointer-events-none opacity-[0.04]" style="background-image: url('hero-particles.png'); background-size: cover; background-position: center; filter: invert(1);"></div>
+
+    <div class="relative flex flex-col md:flex-row items-start justify-between mx-[2%] grow gap-12 md:gap-16 z-10">
       <!-- Left Column - Value Proposition -->
       <div class="max-w-[600px]">
  
